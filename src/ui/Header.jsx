@@ -5,14 +5,16 @@ import Username from "../features/user/Username";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between border-b border-stone-300 bg-yellow-500 px-4 py-3 uppercase sm:px-6">
-      <Link to="/" className="tracking-widest">
-        Fast React Pizza Co.
-      </Link>
+    <header className="border-b border-stone-300 bg-yellow-500 px-4 py-3 uppercase sm:px-6">
+      <div className="m-auto flex max-w-3xl items-center justify-between">
+        <Link to="/" className="tracking-widest">
+          Fast React Pizza Co.
+        </Link>
 
-      <SearchOrder />
+        <SearchOrder />
 
-      <Username />
+        <Username />
+      </div>
     </header>
   );
 }
